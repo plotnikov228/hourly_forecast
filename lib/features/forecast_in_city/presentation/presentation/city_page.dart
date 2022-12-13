@@ -29,44 +29,52 @@ class CityPage extends StatelessWidget {
                 icon: const Icon(Icons.info_outline))
           ],
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(
-              width: MediaQuery.of(context).size.width - 60,
-              child:Text(
-                'Weather forecast in ${cityName[0].toUpperCase()}${cityName.substring(1).toLowerCase()} today!',
-                style: const TextStyle(
-                    color: Colors.blue,
-                    fontWeight: FontWeight.w900,
-                    fontStyle: FontStyle.italic,
-                    fontFamily: 'Open Sans',
-                    fontSize: 24),
-              ),
-            ),
-            SizedBox(
-              width: MediaQuery.of(context).size.width - 60,
-              child: Card(
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: Text('Temperature: ${cityForecasts.first.temp}'),
+        body: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(bottom: 32),
+                child: SizedBox(
+                  width: MediaQuery.of(context).size.width - 40,
+                  child: Center(
+                    child: Text(
+                      'Weather forecast in ${cityName[0].toUpperCase()}${cityName.substring(1).toLowerCase()} today!',
+                      style: const TextStyle(
+                          color: Colors.blue,
+                          fontWeight: FontWeight.w900,
+                          fontStyle: FontStyle.italic,
+                          fontFamily: 'Open Sans',
+                          fontSize: 24),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(16),
-                      child:
-                          Text('Wind speed: ${cityForecasts.first.windSpeed}'),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: Text('Humidity: ${cityForecasts.first.humidity}'),
-                    )
-                  ],
+                  ),
                 ),
               ),
-            ),
-          ],
+              SizedBox(
+                width: MediaQuery.of(context).size.width - 40,
+                child: Card(
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(16),
+                        child: Text('Temperature: ${cityForecasts.first.temp}'),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(16),
+                        child:
+                            Text('Wind speed: ${cityForecasts.first.windSpeed}'),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(16),
+                        child: Text('Humidity: ${cityForecasts.first.humidity}'),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ));
   }
 }

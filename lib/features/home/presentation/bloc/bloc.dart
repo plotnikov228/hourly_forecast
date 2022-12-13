@@ -15,18 +15,18 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     List<City> sortList(List<City> cityForecasts) {
       compare(City a, City b) => a.temp.compareTo(b.temp);
       List<int> days = [];
-      List<City> cityForecastsForSors = [];
+      List<City> cityForecastsForSort = [];
 
         for (City item in cityForecasts) {
           if (days.contains(item.date.day) == false) {
             days.add(item.date.day);
             if(days.length > 3) break;
           }
-          cityForecastsForSors.add(item);
+          cityForecastsForSort.add(item);
 
       }
-      cityForecastsForSors.sort(compare);
-      return cityForecastsForSors;
+      cityForecastsForSort.sort(compare);
+      return cityForecastsForSort;
     }
 
 
