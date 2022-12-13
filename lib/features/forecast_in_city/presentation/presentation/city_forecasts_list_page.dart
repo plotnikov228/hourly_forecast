@@ -9,12 +9,7 @@ class CityForecastsListPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-        '${cityName[0].toUpperCase()}${cityName.substring(1).toLowerCase()}'),
-      ),
-    body: ListView.builder(
+    return  ListView.builder(
         itemCount: cityForecasts.length,
         itemBuilder: (context, index) {
 
@@ -42,6 +37,6 @@ class CityForecastsListPage extends StatelessWidget {
          ],
         ),
       );
-    }),);
+    });
   }
 }

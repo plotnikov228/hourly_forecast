@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hourly_forecast/features/forecast_in_city/presentation/bloc/city_forecast_list_bloc/presentation.dart';
 import 'package:hourly_forecast/features/forecast_in_city/presentation/presentation/city_forecasts_list_page.dart';
 import 'package:hourly_forecast/features/home/domain/entities/city.dart';
 
@@ -22,7 +23,7 @@ class CityPage extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: ((context) => CityForecastsListPage(
+                          builder: ((context) => CityForecastsListBlocPage(
                               cityName: cityName,
                               cityForecasts: cityForecasts))));
                 },
