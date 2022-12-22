@@ -1,16 +1,14 @@
 # hourly_forecast
 
-A new Flutter project.
+Приложение содержит как 3 экрана:
 
-## Getting Started
+1) Главный экран ввода названия города
+![image](https://user-images.githubusercontent.com/92577632/209196357-5121ae25-601e-4656-a14c-623b23206dc7.png)
 
-This project is a starting point for a Flutter application.
+2) Информация погоды по городу
+![image](https://user-images.githubusercontent.com/92577632/209196500-c5d36730-8c8a-4173-a63b-abfee1a19aa0.png)
 
-A few resources to get you started if this is your first Flutter project:
+3) Погодный прогнозы за последние 3 дня
+![image](https://user-images.githubusercontent.com/92577632/209196648-cb4b5cc3-7f2a-4d42-ab2e-36bf21761f93.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+API - https://openweathermap.org/api/hourly-forecast
