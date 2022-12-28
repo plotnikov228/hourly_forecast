@@ -1,6 +1,10 @@
 # hourly_forecast
 
-Приложение содержит как 3 экрана:
+API - https://openweathermap.org/api/hourly-forecast
+
+state - BLoC
+
+Приложение содержит 3 экрана:
 
 1) Главный экран ввода названия города
 
@@ -14,4 +18,3 @@
 
 ![image](https://user-images.githubusercontent.com/92577632/209196648-cb4b5cc3-7f2a-4d42-ab2e-36bf21761f93.png)
 
-API - https://openweathermap.org/api/hourly-forecast
